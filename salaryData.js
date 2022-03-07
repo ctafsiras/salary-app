@@ -45,18 +45,6 @@ let salary_data = {
     name: "Chy Tafsir Ahmed S",
     salary: "43354",
   },
-  "-JvacbMTxlHCG5VaVDWg": {
-    name: "Chy Tafsir Ahmed S",
-    salary: "33454",
-  },
-  "-JviNyklLgZqk4rSB8pA": {
-    name: "Chy Tafsir Ahmed S",
-    salary: "23444",
-  },
-  "-JviO0Y_tNNMQNrdZVBR": {
-    name: "Chy Tafsir Ahmed S",
-    salary: "63444",
-  },
   "-JviO3gXUpSdnZHtliWg": {
     name: "Chy Tafsir Ahmed S",
     salary: "53655",
