@@ -132,43 +132,43 @@ const loadFirebaseData = function (resHandler) {
 
 const displayLastItemDialog = function (lastItem) {
   const dlg = document.getElementById("dialog-last-item");
-  dlg.classList.remove("hide");
+ //  dlg.classList.remove("hide");
   document.getElementById("showName").innerText = lastItem.name;
   document.getElementById("showSalary").innerText = d3.format(",.0f")(
     lastItem.salary
   );
-  dlg.dialog({
-    buttons: {
-      Ok: function () {
-        $(this).dialog("close");
-      },
-    },
-  });
+  // dlg.dialog({
+  //   buttons: {
+  //     Ok: function () {
+  //       $(this).dialog("close");
+  //     },
+  //   },
+  // });
 };
 
 var showDataError = function (name, salary) {
   const dlg = document.getElementById("#dialog-error");
-  dlg.classList.remove("hide");
+ // dlg.classList.remove("hide");
 
   toggleErrorMessage("#newName", name, "Who the hell you are talking about!");
   toggleErrorMessage("#newSalary", salary, "How much that guy make!");
 
-  dlg.dialog({
-    width: 600,
-    buttons: {
-      Ok: function () {
-        $(this).dialog("close");
-      },
-    },
-  });
+  // dlg.dialog({
+  //   width: 600,
+  //   buttons: {
+  //     Ok: function () {
+  //       $(this).dialog("close");
+  //     },
+  //   },
+  // });
 };
 
 function toggleErrorMessage(selector, value, msg) {
   if (value) {
     document.getElementById(selector + "line").style.display = "none";
   } else {
-    document.getElementById(selector + "line").style.display = "block";
-    document.getElementById(selector).innerText = msg;
+  //  document.getElementById(selector + "line").style.display = "block";
+   // document.getElementById(selector).innerText = msg;
   }
 }
 
@@ -179,13 +179,13 @@ const showRecordCount = function (data) {
 
   document.getElementById("numberOfRecords").innerText = data.length;
 
-  dlg.dialog({
-    buttons: {
-      Ok: function () {
-        $(this).dialog("close");
-      },
-    },
-  });
+  // dlg.dialog({
+  //   buttons: {
+  //     Ok: function () {
+  //       $(this).dialog("close");
+  //     },
+  //   },
+  // });
 };
 
 const anotherRecordCountHandler = function anotherRecordCountHandler(e) {
